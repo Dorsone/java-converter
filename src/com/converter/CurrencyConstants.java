@@ -17,7 +17,7 @@ public enum CurrencyConstants {
     WST("WST"), XAF("XAF"), XAG("XAG"), XAU("XAU"), XBA("XBA"), XBB("XBB"), XBC("XBC"), XBD("XBD"), XCD("XCD"), XDR("XDR"), XFU("XFU"), XOF("XOF"),
     XPD("XPD"), XPF("XPF"), XPT("XPT"), XSU("XSU"), XTS("XTS"), XUA("XUA"), XXX("XXX"), YER("YER"), ZAR("ZAR"), ZMW("ZMW");
 
-    private String iso4217Code = "";
+    private final String iso4217Code;
 
     CurrencyConstants(String code) {
         this.iso4217Code = code;
