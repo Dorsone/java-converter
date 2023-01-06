@@ -18,8 +18,9 @@ public class Currency {
         return this.amount;
     }
 
-    public void setAmount(double amount)
+    public Currency setAmount(double amount)
     {
         this.amount = amount;
+        return this;
     }
 }

@@ -10,12 +10,12 @@ public class Validator {
         }
     }
 
-    public double validateDouble(double amount) throws Exception
+    public double validateDouble(String amount) throws Exception
     {
-        if (amount <= 0)
-        {
-            throw new Exception("Your number can't be smaller than 0");
+        try{
+            return Double.parseDouble(amount);
+        } catch(Exception e) {
+            throw new Exception("Invalid double");
         }
-        return amount;
     }
 }
